@@ -1,6 +1,10 @@
 # Real Estate Analysis Chatbot
 
+![App Screenshot](./screenshot.png)
+
 A web-based chatbot that analyzes real estate data, built with React and Django.
+
+[**🔴 Live Demo**](https://real-estate-chatbot1.vercel.app/)
 
 ## Features
 - **Chat Interface**: Natural language queries like "Analyze Wakad".
