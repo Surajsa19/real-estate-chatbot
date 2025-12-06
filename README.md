@@ -1,6 +1,7 @@
 # Real Estate Analysis Chatbot
 
-![App Screenshot](./screenshot.png)
+<img width="1919" height="987" alt="Screenshot 2025-12-06 204727" src="https://github.com/user-attachments/assets/4a62f734-81e8-4b3d-bdff-c3c046229ca1" />
+
 
 A web-based chatbot that analyzes real estate data, built with React and Django.
 
