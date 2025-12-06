@@ -1,7 +1,12 @@
 import axios from 'axios';
 
 // Use environment variable for API URL in production, fallback to localhost for dev
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/analyze/';
+let BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/analyze/';
+
+// Auto-correct the URL if the user only provided the domain (e.g. from Render dashboard)
+if (BASE_URL && !BASE_URL.includes('/api/analyze/')) {
+    BASE_URL = BASE_URL.replace(/\/$/, '') + '/api/analyze/';
+}
 
 export const analyzeQuery = async (query) => {
     try {
